@@ -1,0 +1,11 @@
+export const BG = "#0A0A0A";
+export const CREAM = "#0A0A0A"; // alias for back-compat
+export const SURFACE = "#141414";
+export const SURFACE_2 = "#1A1A1A";
+export const TEXT = "#F5F0E8";
+export const MUTED = "#9A9A9A";
+export const ORANGE = "#E8410A";
+export const ORANGE_SOFT = "#FF6B1A";
+export const BORDER = "#262626";
+export const BORDER_ORANGE = "rgba(232, 65, 10, 0.4)";
+export const DARK = "#1A1A1A";
