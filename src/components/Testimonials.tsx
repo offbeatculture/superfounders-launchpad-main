@@ -1,5 +1,7 @@
-import { ORANGE, MUTED, BORDER, SURFACE } from "@/lib/theme";
+import { MUTED, BORDER, SURFACE } from "@/lib/theme";
 import { Star } from "lucide-react";
+
+const ORANGE = "#F87215";
 
 const reviews = [
   {
@@ -26,11 +28,19 @@ export function Testimonials() {
   return (
     <section className="px-6 py-20 md:py-28">
       <div className="max-w-5xl mx-auto text-center">
-        <p className="text-[11px] font-semibold mb-6" style={{ color: ORANGE, letterSpacing: "0.28em" }}>
+        <p
+          className="text-[11px] font-semibold mb-6"
+          style={{
+            color: ORANGE,
+            letterSpacing: "0.28em",
+          }}
+        >
           FROM INSIDE THE ROOM
         </p>
+
         <h2 className="font-display text-4xl md:text-5xl text-white mb-12">
-          Founders building <span style={{ color: ORANGE }}>alongside you.</span>
+          Founders building{" "}
+          <span style={{ color: ORANGE }}>alongside you.</span>
         </h2>
 
         <div className="grid md:grid-cols-3 gap-5 text-left">
@@ -38,16 +48,28 @@ export function Testimonials() {
             <div
               key={i}
               className="rounded-xl p-6 flex flex-col"
-              style={{ background: SURFACE, border: `1px solid ${BORDER}` }}
+              style={{
+                background: SURFACE,
+                border: `1px solid ${BORDER}`,
+              }}
             >
               <div className="flex gap-0.5 mb-3">
                 {Array.from({ length: 5 }).map((_, j) => (
-                  <Star key={j} className="w-4 h-4 fill-current" style={{ color: ORANGE }} />
+                  <Star
+                    key={j}
+                    className="w-4 h-4 fill-current"
+                    style={{ color: ORANGE }}
+                  />
                 ))}
               </div>
-              <p className="text-[14px] leading-[1.7] mb-6 flex-1" style={{ color: "#C8C3B7" }}>
+
+              <p
+                className="text-[14px] leading-[1.7] mb-6 flex-1"
+                style={{ color: "#C8C3B7" }}
+              >
                 "{r.text}"
               </p>
+
               <div className="flex items-center gap-3">
                 <div
                   className="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold text-white"
@@ -55,9 +77,14 @@ export function Testimonials() {
                 >
                   {r.n}
                 </div>
+
                 <div>
-                  <div className="text-white text-sm font-semibold">{r.name}</div>
-                  <div className="text-xs" style={{ color: MUTED }}>{r.biz}</div>
+                  <div className="text-white text-sm font-semibold">
+                    {r.name}
+                  </div>
+                  <div className="text-xs" style={{ color: MUTED }}>
+                    {r.biz}
+                  </div>
                 </div>
               </div>
             </div>
