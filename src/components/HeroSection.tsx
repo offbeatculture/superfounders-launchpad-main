@@ -67,18 +67,18 @@ export function HeroSection() {
               height: 100%;
             }
           `}</style>
-          {React.createElement("wistia-player" as any, {
+          {/* {React.createElement("wistia-player" as any, {
   "media-id": "jl86kar1ww",
   aspect: "1.7777777777777777",
   autoplay: true,
   muted: true,
   "silent-autoplay": "allow",
-})}
+})} */}
 
-          {/* {React.createElement("wistia-player" as any, {
+          {React.createElement("wistia-player" as any, {
             "media-id": "jl86kar1ww",
             aspect: "1.7777777777777777",
-          })} */}
+          })}
         </div>
 
         <p className="text-sm mt-5" style={{ color: MUTED }}>
